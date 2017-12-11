@@ -1,0 +1,27 @@
+a b c x y z
+B a b c x y z
+B
+0 1 2 3 4 5 6
+0
+6
+1
+0 1 a x R
+0 4 y y L
+0 6 B B S
+1 1 a a R
+1 1 y y R
+1 2 b y R
+2 2 b b R
+2 2 z z R
+2 3 c z L
+3 0 x x R
+3 3 z z L
+3 3 b b L
+3 3 y y L
+3 3 a a L
+4 4 x x L
+4 5 B B R
+5 5 y y R
+5 5 z z R
+5 5 x x R
+5 6 B B S

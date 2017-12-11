@@ -70,9 +70,9 @@ class TuringMachine(object):
 
     # inicializa as fitas
     def _init_tapes(self):
-        tapes = [Tape(self._conteudo, self._simb_branco)]
-        for i in range(1, self._fitas):
-            tapes.append(Tape([self._simb_branco], self._simb_branco))
+        tapes = []
+        for i in range(0, self._fitas):
+            tapes.append(Tape(self._conteudo[i], self._simb_branco))
         return tapes
 
     # imprime informacoes

@@ -36,8 +36,18 @@ def main():
     for i in range(7,len(entrada)):
         transicoes.append(entrada[i].replace('\n', '').replace('\r','').split(' '))
     conteudo = []
-    for i in range(len(sys.argv[2])):
-        conteudo.append(str(sys.argv[2][i]))
+    for i in range(2, int(fitas)+2):
+        c = []
+        print(i)
+        print(len(sys.argv))
+        if i >= len(sys.argv):
+            c = ['B']
+            conteudo.append(c)
+            continue
+        for j in range(len(sys.argv[i])):
+            c.append(str(sys.argv[i][j]))
+        conteudo.append(c)
+    print(conteudo)
 
     TM = tm.TuringMachine(
         alfabeto_entrada = alfabeto_entrada,

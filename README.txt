@@ -13,7 +13,7 @@ Alunos: Rodrigo Paula da Silva,
 
 -> Para executar o programa digite o seguinte comando no terminal:
 
-# python main.py 'entrada.txt' 'conteudo da fita'
+# python main.py 'entrada.txt' 'conteudo fita 1' ['conteudo fita 2'] ... ['conteudo fita n']
 
 -------------------------------------------------------------------------
 
