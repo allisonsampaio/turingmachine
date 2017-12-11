@@ -2,7 +2,7 @@ from node import Node
 from tape import Tape
 from copy import deepcopy
 
-
+# essa é deterministica, a não determinista ta em baixo
 class TuringMachineDeterministic(object):
     def __init__(self, alfabeto_entrada, alfabeto_fita, simb_branco,
                  estados, estado_inicial, estados_finais, fitas,
