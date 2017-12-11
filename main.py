@@ -27,7 +27,7 @@ def main():
     for i in range(len(sys.argv[2])):
         conteudo.append(str(sys.argv[2][i]))
 
-    TM = tm.TuringMachineNonDeterministic(
+    TM = tm.NonDeterministicTuringMachine(
         alfabeto_entrada = alfabeto_entrada,
         alfabeto_fita = alfabeto_fita,
         simb_branco = branco,
