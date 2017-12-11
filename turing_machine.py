@@ -2,7 +2,7 @@ from node import Node
 from tape import Tape
 from copy import deepcopy
 
-class NonDeterministicTuringMachine(object):
+class TuringMachine(object):
 
     def __init__(self, alfabeto_entrada, alfabeto_fita, simb_branco,
                  estados, estado_inicial, estados_finais, fitas,
@@ -19,8 +19,8 @@ class NonDeterministicTuringMachine(object):
 
     # executa a TM
     def executar(self):
-        #self.print_info()
-
+        self.print_info()
+        print('\nExecutando... (Pressione CTRL+C para cancelar)')
         # busca em largura ate encontrar um estado final ou
         # nao existir mais transicoes validas
         tapes = self._init_tapes()
@@ -85,7 +85,7 @@ class NonDeterministicTuringMachine(object):
               'Estados finais: {}\n'
               'Fitas: {}\n'
               'Transicoes: {}\n'
-              'Conteudo: {}'.format(self._alfabeto_entrada,
+              'Conteudo da fita: {}'.format(self._alfabeto_entrada,
                                     self._alfabeto_fita,
                                     self._simb_branco,
                                     self._estados,
@@ -95,7 +95,7 @@ class NonDeterministicTuringMachine(object):
                                     self._transicoes,
                                     self._conteudo))
 
-
+# esta foi feita antes. ignore
 class DeterministicTuringMachine(object):
     def __init__(self, alfabeto_entrada, alfabeto_fita, simb_branco,
                  estados, estado_inicial, estados_finais, fitas,

@@ -1,3 +1,15 @@
+# Maquina de Turing nao deterministica com n fitas.
+#
+# APS realizada para a disciplina de Linguagens Formais, Automatos e Computabilidade
+# UTFPR - Campo Mourao
+# Prof.: Marco Aurelio Graciotto da Silva
+# Alunos: Rodrigo Paula da Silva,
+#         Mara Luci Goulart,
+#         Alisson Sampaio.
+#
+# Obs.: Foram retirados acentos e caracteres especiais do codigo para
+#       nao dar problema com versoes anteriores do Python.
+
 import sys
 import turing_machine as tm
 
@@ -27,7 +39,7 @@ def main():
     for i in range(len(sys.argv[2])):
         conteudo.append(str(sys.argv[2][i]))
 
-    TM = tm.NonDeterministicTuringMachine(
+    TM = tm.TuringMachine(
         alfabeto_entrada = alfabeto_entrada,
         alfabeto_fita = alfabeto_fita,
         simb_branco = branco,
